@@ -190,7 +190,7 @@ Operating Options:
     --no-hardcoded-sync
         By default, if there is no existing database the light
         client will automatically jump to a block hardcoded in
-        the chain's specifications. This disables this feature.
+        the chain\'s specifications. This disables this feature.
 
     --force-direct
         Run the originally installed version of Parity, ignoring
@@ -202,7 +202,7 @@ Operating Options:
         continuously syncs the chain; passive - Parity syncs
         initially, then sleeps and wakes regularly to resync;
         dark - Parity syncs only when the JSON-RPC is active;
-        offline - Parity doesn't sync. (default: last)
+        offline - Parity doesn\'t sync. (default: last)
 
     --mode-timeout=[SECS]
         Specify the number of seconds before inactivity timeout
@@ -246,7 +246,7 @@ Operating Options:
         (default: $BASE/keys)
 
     --identity=[NAME]
-        Specify your node's name. (default: )
+        Specify your node\'s name. (default: )
 
     -d, --base-path=[PATH]
         Specify the base data storage path.
@@ -257,7 +257,7 @@ Operating Options:
 Convenience Options:
     --unsafe-expose
         All servers will listen on external interfaces and will
-        be remotely accessible. It's equivalent with setting the
+        be remotely accessible. It\'s equivalent with setting the
         following: --[ws,jsonrpc,ui,ipfs
         -api,secretstore,stratum,dapps,secretstore-
         http]-interface=all
@@ -365,7 +365,7 @@ Networking Options:
         (default: 30303)
 
     --interface=[IP]
-        Network interfaces. Valid values are 'all', 'local' or
+        Network interfaces. Valid values are \'all\', \'local\' or
         the ip of the interface you want parity to listen to.
         (default: all)
 
@@ -420,7 +420,7 @@ API and Console Options – HTTP JSON-RPC:
 
     --jsonrpc-interface=[IP]
         Specify the hostname portion of the HTTP JSON-RPC API
-        server, IP should be an interface's IP address, or all
+        server, IP should be an interface\'s IP address, or all
         (all interfaces) or local. (default: local)
 
     --jsonrpc-apis=[APIS]
@@ -430,7 +430,7 @@ API and Console Options – HTTP JSON-RPC:
         pubsub, personal, signer, parity, parity_pubsub,
         parity_accounts, parity_set, traces, rpc, secretstore,
         shh, shh_pubsub. You can also disable a specific API by
-        putting '-' in the front, example: all,-personal. 'safe'
+        putting \'-\' in the front, example: all,-personal. \'safe\'
         enables the following APIs: web3, net, eth, pubsub,
         parity, parity_pubsub, traces, rpc, shh, shh_pubsub
         (default:
@@ -471,7 +471,7 @@ API and Console Options – WebSockets:
 
     --ws-interface=[IP]
         Specify the hostname portion of the WebSockets JSON-RPC
-        server, IP should be an interface's IP address, or all
+        server, IP should be an interface\'s IP address, or all
         (all interfaces) or local. (default: local)
 
     --ws-apis=[APIS]
@@ -481,7 +481,7 @@ API and Console Options – WebSockets:
         pubsub, personal, signer, parity, parity_pubsub,
         parity_accounts, parity_set, traces, rpc, secretstore,
         shh, shh_pubsub. You can also disable a specific API by
-        putting '-' in the front, example: all,-personal. 'safe'
+        putting \'-\' in the front, example: all,-personal. \'safe\'
         enables the following APIs: web3, net, eth, pubsub,
         parity, parity_pubsub, traces, rpc, shh, shh_pubsub
         (default:
@@ -517,8 +517,8 @@ API and Console Options – IPC:
         names are: all, safe, web3, net, eth, pubsub, personal,
         signer, parity, parity_pubsub, parity_accounts,
         parity_set, traces, rpc, secretstore, shh, shh_pubsub.
-        You can also disable a specific API by putting '-' in
-        the front, example: all,-personal. 'safe' enables the
+        You can also disable a specific API by putting \'-\' in
+        the front, example: all,-personal. \'safe\' enables the
         following APIs: web3, net, eth, pubsub, parity,
         parity_pubsub, traces, rpc, shh, shh_pubsub (default:
         web3,eth,pubsub,net,parity,parity_pubsub,parity_accounts
@@ -534,7 +534,7 @@ API and Console Options – IPFS:
 
     --ipfs-api-interface=[IP]
         Specify the hostname portion of the IPFS API server, IP
-        should be an interface's IP address or local. (default:
+        should be an interface\'s IP address or local. (default:
         local)
 
     --ipfs-api-hosts=[HOSTS]
@@ -570,36 +570,36 @@ Secret Store Options:
     --secretstore-acl-contract=[SOURCE]
         Secret Store permissioning contract address source:
         none, registry (contract address is read from
-        'secretstore_acl_checker' entry in registry) or address.
+        \'secretstore_acl_checker\' entry in registry) or address.
         (default: registry)
 
     --secretstore-contract=[SOURCE]
         Secret Store Service contract address source: none,
         registry (contract address is read from
-        'secretstore_service' entry in registry) or address.
+        \'secretstore_service\' entry in registry) or address.
 
     --secretstore-srv-gen-contract=[SOURCE]
         Secret Store Service server key generation contract
         address source: none, registry (contract address is read
-        from 'secretstore_service_srv_gen' entry in registry) or
+        from \'secretstore_service_srv_gen\' entry in registry) or
         address.
 
     --secretstore-srv-retr-contract=[SOURCE]
         Secret Store Service server key retrieval contract
         address source: none, registry (contract address is read
-        from 'secretstore_service_srv_retr' entry in registry)
+        from \'secretstore_service_srv_retr\' entry in registry)
         or address.
 
     --secretstore-doc-store-contract=[SOURCE]
         Secret Store Service document key store contract address
         source: none, registry (contract address is read from
-        'secretstore_service_doc_store' entry in registry) or
+        \'secretstore_service_doc_store\' entry in registry) or
         address.
 
     --secretstore-doc-sretr-contract=[SOURCE]
         Secret Store Service document key shadow retrieval
         contract address source: none, registry (contract
-        address is read from 'secretstore_service_doc_sretr'
+        address is read from \'secretstore_service_doc_sretr\'
         entry in registry) or address.
 
     --secretstore-nodes=[NODES]
@@ -610,13 +610,13 @@ Secret Store Options:
     --secretstore-server-set-contract=[SOURCE]
         Secret Store server set contract address source: none,
         registry (contract address is read from
-        'secretstore_server_set' entry in registry) or address.
+        \'secretstore_server_set\' entry in registry) or address.
         (default: registry)
 
     --secretstore-interface=[IP]
         Specify the hostname portion for listening to Secret
         Store Key Server internal requests, IP should be an
-        interface's IP address, or local. (default: local)
+        interface\'s IP address, or local. (default: local)
 
     --secretstore-port=[PORT]
         Specify the port portion for listening to Secret Store
@@ -625,7 +625,7 @@ Secret Store Options:
     --secretstore-http-interface=[IP]
         Specify the hostname portion for listening to Secret
         Store Key Server HTTP requests, IP should be an
-        interface's IP address, or local. (default: local)
+        interface\'s IP address, or local. (default: local)
 
     --secretstore-http-port=[PORT]
         Specify the port portion for listening to Secret Store
@@ -658,7 +658,7 @@ Sealing/Mining Options:
 
     --tx-queue-no-unfamiliar-locals
         Local transactions sent through JSON-RPC (HTTP,
-        WebSockets, etc) will be treated as 'external' if the
+        WebSockets, etc) will be treated as \'external\' if the
         sending account is unknown.
 
     --tx-queue-no-early-reject
@@ -678,7 +678,7 @@ Sealing/Mining Options:
         attempted to be mined.
 
     --no-persistent-txqueue
-        Don't save pending local transactions to disk to be
+        Don\'t save pending local transactions to disk to be
         restored whenever the node restarts.
 
     --stratum
@@ -712,7 +712,7 @@ Sealing/Mining Options:
         Set of transactions to relay. SET may be: cheap - Relay
         any transaction in the queue (this may include invalid
         transactions); strict - Relay only executed transactions
-        (this guarantees we don't relay invalid transactions,
+        (this guarantees we don\'t relay invalid transactions,
         but means we relay nothing if not mining); lenient -
         Same as strict when mining, and cheap when not.
         (default: cheap)
@@ -723,7 +723,7 @@ Sealing/Mining Options:
 
     --usd-per-eth=[SOURCE]
         USD value of a single ETH. SOURCE may be either an
-        amount in USD, a web service or 'auto' to use each web
+        amount in USD, a web service or \'auto\' to use each web
         service in turn and fallback on the last known good
         value. (default: auto)
 
@@ -752,7 +752,7 @@ Sealing/Mining Options:
 
     --tx-queue-per-sender=[LIMIT]
         Maximum number of transactions per sender in the queue.
-        By default it's 1% of the entire queue, but not less
+        By default it\'s 1% of the entire queue, but not less
         than 16.
 
     --tx-queue-strategy=[S]
@@ -816,18 +816,18 @@ Internal Options:
 
 Miscellaneous Options:
     --no-color
-        Don't use terminal color codes in output.
+        Don\'t use terminal color codes in output.
 
     -v, --version
         Show information about version.
 
     --no-config
-        Don't load a configuration file.
+        Don\'t load a configuration file.
 
     -l, --logging=[LOGGING]
         Specify the general logging level (error, warn, info,
         debug or trace). It can also be set for a specific
-        module, example: '-l sync=debug,rpc=trace'
+        module, example: \'-l sync=debug,rpc=trace\'
 
     --log-file=[FILENAME]
         Specify a filename into which logging should be
